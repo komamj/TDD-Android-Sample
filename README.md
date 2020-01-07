@@ -1,2 +1,2 @@
-# TDD-Android-Sample
-TDD sample base android.
+# TDD-Sample
+TDD sample base kotlin.
