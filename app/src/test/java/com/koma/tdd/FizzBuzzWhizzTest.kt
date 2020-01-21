@@ -61,8 +61,8 @@ class FizzBuzzWhizzTest {
     }
 
     @Test
-    fun `should return "FizzBuzz" when reportNumber called with input 15`() {
-        val targetNumber = 15
+    fun `should return "FizzBuzz" when reportNumber called with input 60`() {
+        val targetNumber = 60
 
         val result = fizzBuzzWhizz.reportNumber(targetNumber)
 
@@ -79,8 +79,8 @@ class FizzBuzzWhizzTest {
     }
 
     @Test
-    fun `should return "BuzzWhizz" when reportNumber called with input 70`() {
-        val targetNumber = 70
+    fun `should return "BuzzWhizz" when reportNumber called with input 140`() {
+        val targetNumber = 140
 
         val result = fizzBuzzWhizz.reportNumber(targetNumber)
 
@@ -88,11 +88,47 @@ class FizzBuzzWhizzTest {
     }
 
     @Test
-    fun `should return "FizzBuzzWhizz" when reportNumber called with input 105`() {
-        val targetNumber = 105
+    fun `should return "FizzBuzzWhizz" when reportNumber called with input 210`() {
+        val targetNumber = 210
 
         val result = fizzBuzzWhizz.reportNumber(targetNumber)
 
         assertThat(result).isEqualTo("FizzBuzzWhizz")
+    }
+
+    @Test
+    fun `should return "Fizz" when reportNumber called with input 13`() {
+        val targetNumber = 13
+
+        val result = fizzBuzzWhizz.reportNumber(targetNumber)
+
+        assertThat(result).isEqualTo("Fizz")
+    }
+
+    @Test
+    fun `should return "Fizz" when reportNumber called with input 30`() {
+        val targetNumber = 30
+
+        val result = fizzBuzzWhizz.reportNumber(targetNumber)
+
+        assertThat(result).isEqualTo("Fizz")
+    }
+
+    @Test
+    fun `should return "BuzzWhizz" when reportNumber called with input 35`() {
+        val targetNumber = 35
+
+        val result = fizzBuzzWhizz.reportNumber(targetNumber)
+
+        assertThat(result).isEqualTo("BuzzWhizz")
+    }
+
+    @Test
+    fun `should return "Fizz" when reportNumber called with input 75`() {
+        val targetNumber = 75
+
+        val result = fizzBuzzWhizz.reportNumber(targetNumber)
+
+        assertThat(result).isEqualTo("Fizz")
     }
 }
